@@ -32,3 +32,7 @@ ii. Precipitation climatology over Ireland
 
 Then, we suggest you run similar analyses on you own. 
 Here are a few ideas, more or less broken down into steps to represent different levels of difficulty:
+* Temperature climatology over Ireland
+* How warm was the month of July 2006? Compare it with the average July temperature.
+* What is the hottest and coldest temperature each place in the UK has seen? 
+* Show the seasonnal cycle of temperature and precipitation for Oxford (or any other place of your liking)
