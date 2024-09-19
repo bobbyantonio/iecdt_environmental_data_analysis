@@ -1,0 +1,23 @@
+name: iecdt_eda
+channels:
+  - conda-forge
+dependencies:
+  - xarray
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - cartopy
+  - cis
+  - xesmf
+  - scipy
+  - dask
+  - zarr
+  - gcsfs
+  - python-graphviz
+  - pyarrow
+  - geodatasets
+  - geopandas
+  - opencv
+  - healpy
+  - astropy-healpix
