@@ -3,6 +3,6 @@ Learning materials for the Oxford Interactive Earth CDT module on Environmental 
 
 ## Additional resources
 
-Python for Climate Scientists
+Python for Climate Scientists (some content may be out of date)
 https://github.com/duncanwp/python_for_climate_scientists/
 
