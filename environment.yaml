@@ -21,3 +21,7 @@ dependencies:
   - opencv
   - healpy
   - astropy-healpix
+  - satpy
+  - uxarray
+  pip:
+    - xarray-regrid
