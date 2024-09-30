@@ -19,6 +19,7 @@ dependencies:
   - geodatasets
   - geopandas
   - moviepy
+  - pydub
   - healpy
   - astropy-healpix
   - satpy
