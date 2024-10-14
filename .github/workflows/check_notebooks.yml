@@ -1,0 +1,37 @@
+name: Jupyter Notebooks CI
+on: [push, pull_request]
+jobs:
+  Check-Notebooks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - name: check out repository code
+        uses: actions/checkout@v3
+      - name: set up conda environment
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          miniforge-version: latest
+          miniforge-variant: miniforge
+          channel-priority: strict
+          channels: conda-forge
+          show-channel-urls: true
+          use-only-tar-bz2: true
+          auto-update-conda: true
+          auto-activate-base: false
+          activate-environment: iecdt_eda
+      - name: Install tobac dependencies
+        run: |
+          conda env update --yes --file environment.yaml
+	  conda install --yes jupyter
+      - name: Find all notebook files
+        run: |
+          find . -type f -name '*.ipynb' > nbfiles.txt
+          cat nbfiles.txt
+      - name: Execute all notebook files
+        run: |
+          while IFS= read -r nbpath; do
+            jupyter nbconvert --inplace --ClearMetadataPreprocessor.enabled=True --clear-output $nbpath
+            jupyter nbconvert --to notebook --inplace --execute $nbpath
+          done < nbfiles.txt
