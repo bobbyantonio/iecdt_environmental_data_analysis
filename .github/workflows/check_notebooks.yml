@@ -25,7 +25,6 @@ jobs:
           miniforge-version: latest
           channels: conda-forge
           show-channel-urls: true
-          use-only-tar-bz2: true
           auto-update-conda: true
           auto-activate-base: false
           environment-file: environment.yaml
