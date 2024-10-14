@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
+  - ipykernel
   - xarray
   - pandas
   - numpy
