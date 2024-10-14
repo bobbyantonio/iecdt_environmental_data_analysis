@@ -23,7 +23,6 @@ jobs:
         with:
           python-version: 3.12
           miniforge-version: latest
-          channel-priority: strict
           channels: conda-forge
           show-channel-urls: true
           use-only-tar-bz2: true

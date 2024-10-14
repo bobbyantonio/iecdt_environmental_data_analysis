@@ -1,6 +1,7 @@
 name: iecdt_eda
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
   - xarray
   - pandas
