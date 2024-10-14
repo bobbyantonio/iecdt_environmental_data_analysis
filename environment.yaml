@@ -20,6 +20,7 @@ dependencies:
   - geodatasets
   - geopandas
   - moviepy
+  - ffmpeg
   - pydub
   - healpy
   - astropy-healpix
