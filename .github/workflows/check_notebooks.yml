@@ -7,9 +7,9 @@ jobs:
       run:
         shell: bash -el {0}
     steps:
-      - name: check out repository code
+      - name: Check out repository code
         uses: actions/checkout@v3
-      - name: set up conda environment
+      - name: Set up conda environment
         uses: conda-incubator/setup-miniconda@v3
         with:
           miniforge-version: latest
@@ -21,10 +21,10 @@ jobs:
           auto-update-conda: true
           auto-activate-base: false
           activate-environment: iecdt_eda
-      - name: Install tobac dependencies
+      - name: Install dependencies
         run: |
           conda env update --yes --file environment.yaml
-	  conda install --yes jupyter
+          conda install --yes jupyter
       - name: Find all notebook files
         run: |
           find . -type f -name '*.ipynb' > nbfiles.txt
