@@ -24,5 +24,6 @@ dependencies:
   - astropy-healpix
   - satpy
   - uxarray
-  pip:
+  - pip
+  - pip:
     - xarray-regrid
