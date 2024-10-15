@@ -1,0 +1,42 @@
+name: Jupyter Notebooks CI
+on: [push, pull_request]
+jobs:
+  Check-Notebooks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Cache packages
+        uses: actions/cache@v3
+        env:
+          CACHE_NUMBER: 0
+        with:
+          path: ~/conda_pkgs_dir
+          key:
+            ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{
+            hashFiles('environment.yaml') }}
+      - name: Set up conda environment
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          miniforge-version: latest
+          channels: conda-forge
+          show-channel-urls: true
+          auto-update-conda: true
+          auto-activate-base: false
+          environment-file: environment.yaml
+      - name: Install dependencies
+        run: |
+          conda install --yes jupyter
+      - name: Find all notebook files
+        run: |
+          find . -type f -name '*.ipynb' > nbfiles.txt
+          cat nbfiles.txt
+      - name: Execute all notebook files
+        run: |
+          while IFS= read -r nbpath; do
+            jupyter nbconvert --inplace --ClearMetadataPreprocessor.enabled=True --clear-output $nbpath
+            jupyter nbconvert --to notebook --inplace --execute $nbpath
+          done < nbfiles.txt
