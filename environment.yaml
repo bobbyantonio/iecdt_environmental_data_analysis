@@ -1,7 +1,9 @@
 name: iecdt_eda
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
+  - ipykernel
   - xarray
   - pandas
   - numpy
@@ -19,10 +21,12 @@ dependencies:
   - geodatasets
   - geopandas
   - moviepy
+  - ffmpeg
   - pydub
   - healpy
   - astropy-healpix
   - satpy
   - uxarray
-  pip:
+  - pip
+  - pip:
     - xarray-regrid
