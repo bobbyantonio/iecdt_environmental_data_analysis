@@ -3,6 +3,9 @@ Learning materials for the Oxford Intelligent Earth CDT module on Environmental 
 
 ## Additional resources
 
+"The missing semester of your computer science education" - MIT course on key tools including using the terminal and git
+https://missing.csail.mit.edu/
+
 Python for Climate Scientists (some content may be out of date)
 https://github.com/duncanwp/python_for_climate_scientists/
 
@@ -24,6 +27,13 @@ https://github.com/duncanwp/python_for_climate_scientists/
 
 ### matplotlib
 * Matplotlib tutorial: https://matplotlib.org/stable/tutorials/index.html
+* Python graph gallery: https://python-graph-gallery.com
+* Fabio Crameri perceptually uniform + colourblind friendly colour maps: https://www.fabiocrameri.ch/colourmaps/
+* Color brewer; colourmap advice for maps: https://colorbrewer2.org
+
+### cartopy
+* Using cartopy with matplotlib: https://scitools.org.uk/cartopy/docs/v0.15/matplotlib/intro.html
+* Projection wizard: https://projectionwizard.org/#
 
 ### Dask
 
