@@ -27,8 +27,14 @@ https://github.com/duncanwp/python_for_climate_scientists/
 
 ### Dask
 
+* Dask tutorial page: https://tutorial.dask.org/
+
 ### Zarr
+
+* Zarr tutorial: https://zarr.readthedocs.io/en/stable/tutorial.html
 
 ### HEALPix
 
-* 
+* Healpy tutorial: https://healpy.readthedocs.io/en/latest/tutorial.html
+* Astropy-healpix Documentation: https://astropy-healpix.readthedocs.io/en/latest/
+
