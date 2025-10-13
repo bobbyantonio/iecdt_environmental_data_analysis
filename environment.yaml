@@ -15,6 +15,7 @@ dependencies:
   - scipy
   - dask
   - zarr
+  - s3fs
   - gcsfs
   - python-graphviz
   - pyarrow
