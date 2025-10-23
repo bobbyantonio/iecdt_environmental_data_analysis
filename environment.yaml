@@ -5,6 +5,7 @@ channels:
 dependencies:
   - ipykernel
   - xarray
+  - flox
   - pandas
   - numpy
   - matplotlib
@@ -28,6 +29,9 @@ dependencies:
   - astropy-healpix
   - satpy
   - uxarray
+  - intake==0.7.0
+  - intake-esm
+  - intake-xarray==0.7.0
   - pip
   - pip:
     - xarray-regrid
