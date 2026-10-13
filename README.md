@@ -1,6 +1,12 @@
 # iecdt_environmental_data_analysis
 Learning materials for the Oxford Intelligent Earth CDT module on Environmental Data Analysis
 
+## Creating the conda environment
+
+```
+conda env create --prefix /work/scratch-nopw2/bantonio/iecdt_eda_env --file environment.yaml
+```
+
 ## Additional resources
 
 "The missing semester of your computer science education" - MIT course on key tools including using the terminal and git

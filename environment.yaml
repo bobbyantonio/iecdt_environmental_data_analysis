@@ -18,6 +18,7 @@ dependencies:
   - zarr
   - s3fs
   - gcsfs
+  - graphviz
   - python-graphviz
   - pyarrow
   - geodatasets
