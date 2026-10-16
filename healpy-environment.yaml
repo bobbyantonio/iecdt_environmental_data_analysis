@@ -1,0 +1,20 @@
+name: healpy_env
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - ipykernel
+  - xarray
+  - pandas
+  - numpy
+  - healpy
+  - astropy-healpix
+  - pip
+  - matplotlib
+  - uxarray
+  - intake
+  - intake-xarray
+  - numba
+  - aiohttp
+  - requests
+  - zarr
