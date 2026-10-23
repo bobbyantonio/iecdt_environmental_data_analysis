@@ -4,7 +4,7 @@ Learning materials for the Oxford Intelligent Earth CDT module on Environmental 
 ## Creating the conda environment
 
 ```
-conda env create --prefix /work/scratch-nopw2/bantonio/iecdt_eda_env --file environment.yaml
+conda env create --prefix /PREFIX/iecdt_eda_env --file environment.yaml
 ```
 
 ## Additional resources
